@@ -1,0 +1,129 @@
+/* section wise container start */
+
+.container.p-4.mb-3.pb-4.bg-white.mt-4,.container.bg-white {
+    width: 82%;
+}
+
+/* section wise container end */
+
+/* Header Area start */
+
+.navbar-expand-lg .navbar-collapse {
+    margin-left: 700px;
+}
+li.nav-item {
+    padding: 10px;
+}
+.navbar-light .navbar-brand {
+    color: #fff !important;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #fff !important;
+}
+
+/* Header Area end */
+
+/* top player section start */
+
+.section-title {
+    color:#562EFF;
+    font-size: 24px;
+}
+.players {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 29px;
+}
+.player {
+    display: flex;
+    align-items: center;
+}
+.player img {
+    max-width: 100%;
+    height: 56px;
+}
+.player-name {
+    padding-left: 16px;
+    font-size: 18px;
+} 
+
+/* top player section end */
+
+/* top blog section start */
+
+.blogs {
+    grid-template-columns: repeat(2,1fr);
+}
+
+/* top blog section end */
+
+/* latest course section start */
+
+.courses {
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 20px;
+}
+.courses .card {
+    width: 100%;
+    box-shadow: 0px 5.342289924621582px 13.35572338104248px 0px #0000000D;
+    border-radius: 15px;
+    border: 0;
+}
+.fa-star.filled {
+    color: #FFC014;
+}
+.fa-star.empty {
+    color: #AEAEAE;
+    opacity: 0.25;
+}
+.course-duration {
+    background: #FFE4E8;
+    border-radius: 14.6913px;
+    color:#FF4A60;
+}
+.courses .card-text {
+    color:#ED6B4F;
+}
+.course-info {
+    justify-content: space-between;
+}
+.course-banner img {
+    max-width: 100px;
+}
+.fa-star {
+    font-size: 10px;
+}
+.fa-clock {
+    padding-right: 5px;
+}
+
+/* latest course section end */
+
+/* media query start */
+
+@media (max-width: 688px){
+    .container.p-4.mb-3.pb-4.bg-white.mt-4,.container.bg-white {
+        width: 90%;
+    }
+    .section-title {
+        text-align: center;
+    } 
+    .courses {
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+    }
+    .players,.blogs {
+        grid-template-columns: repeat(1,1fr);
+    }
+    main {
+        margin-top: -23px;
+    }
+    .courses .card {
+        margin-bottom: 15px;
+    }
+    .navbar-expand-lg .navbar-collapse {
+        margin-left: 0;
+        text-align: center;
+        margin-right: 15px;
+    }
+}
